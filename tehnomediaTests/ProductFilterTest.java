@@ -40,7 +40,9 @@ public class ProductFilterTest {
         menu.clickMikseri();
         product.clickKlasicni();
         product.clickBosch();
+        Thread.sleep(1000);
         product.clickOstaleBoje();
+        Thread.sleep(1000);
         Assert.assertEquals(product.boschMikserText(), "BOSCH MFQ36450S", "Product should be 'BOSCH MFQ36450S'");
         System.out.println(product.boschMikserText()+ ", Cena: "+ product.boschCena());
 

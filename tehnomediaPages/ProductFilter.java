@@ -31,18 +31,22 @@ public class ProductFilter {
     }
 
     public void clickBosch() throws InterruptedException {
-        ((JavascriptExecutor) wd).executeScript("arguments[0].scrollIntoView(true);", bosch);
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("window.scrollBy(0,50)", "");
         Thread.sleep(500);
         this.bosch.click();
     }
 
     public void clickOstaleBoje() throws InterruptedException {
-        ((JavascriptExecutor) wd).executeScript("arguments[0].scrollIntoView(true);", color);
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("window.scrollBy(0,500)", "");
         Thread.sleep(500);
         this.color.click();
+        js.executeScript("window.scrollBy(0,80)", "");
     }
 
-    public String boschMikserText(){
+    public String boschMikserText() throws InterruptedException {
+
        return boschMikser.getText();
     }
 
