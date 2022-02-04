@@ -1,0 +1,44 @@
+<suite name="Test Automation Tehnomedia" verbose="1" >
+    <test name="Menu Test" >
+        <classes>
+            <class name="tehnomediaTests.menuTest" />
+        </classes>
+    </test>
+
+    <test name="Search Form Test" >
+        <classes>
+            <class name="tehnomediaTests.searchFormTest" />
+        </classes>
+    </test>
+
+    <test name="Baner Test" >
+        <classes>
+            <class name="tehnomediaTests.banerTest" />
+        </classes>
+    </test>
+
+    <test name="Add To Cart Test" >
+        <classes>
+            <class name="tehnomediaTests.addToCartTest" />
+        </classes>
+    </test>
+
+    <test name="Empty Cart Purchase Test" >
+        <classes>
+            <class name="tehnomediaTests.emptyCartTest" />
+        </classes>
+    </test>
+
+    <test name="Product Filter Test" >
+        <classes>
+            <class name="tehnomediaTests.ProductFilterTest" />
+        </classes>
+    </test>
+
+    <test name="Contact Form Test" >
+        <classes>
+            <class name="tehnomediaTests.ContactFormTest" />
+        </classes>
+    </test>
+
+</suite>
